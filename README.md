@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/kelton-glitch/blog-preview-card)
+- Live Site URL: [Live site](https://blog-card-review.netlify.app/)
 
 ## My process
 
