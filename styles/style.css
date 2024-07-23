@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(../assets/fonts/static/Figtree-SemiBold.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(../assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', 'sans-serif';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.card {
+    width: 380px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 2px hsl(0, 0%, 7%) solid;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    border-radius: 20px;
+    width: 380px;
+    height: 520px;
+    background-color: hsl(0, 0%, 7%);
+    z-index: -1;
+}
+
+.main-image {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.learning,
+.date,
+.title,
+.body,
+.author {
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.body {
+    color: hsl(0, 0%, 42%);
+    font-size: 16px;
+}
+
+.learning {
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: hsl(47, 88%, 63%);
+    font-weight: 800;
+    padding: 5px 15px;
+}
+
+.author img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.attribution {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 500px;
+    }
+
+    .main-image{
+        width: 95%;
+    }
+
+    .card::before {
+        left: 7px;
+        top: 10px;
+        width: 500px;
+        height: 600px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .body {
+        font-size: 18px;
+    }
+
+    .learning {
+        padding: 10px 20px;
+    }
+
+    .author img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Media query for 375px Mobile screens */
+@media (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .card::before {
+        left: 2px;
+        top: 4px;
+        width: 100%;
+        height: calc(100% - 10px);
+        border-radius: 15px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .body {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .learning {
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 5px 10px;
+    }
+
+    .author {
+        margin-left: 10px;
+    }
+
+    .author img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .attribution {
+        font-size: 10px;
+    }
+}
